@@ -28,6 +28,7 @@ RUN /opt/venv/bin/pip install --upgrade pip && /opt/venv/bin/pip install jupyter
 # Set the virtual environment as the default Python path
 ENV PATH="/opt/venv/bin:$PATH"
 
+RUN pip3 install scvi scvi-tools
 
 # RUN chmod +x /home/*
 ENV SHELL=/bin/bash
