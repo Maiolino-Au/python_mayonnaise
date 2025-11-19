@@ -29,7 +29,7 @@ RUN /opt/venv/bin/pip install --upgrade pip && /opt/venv/bin/pip install jupyter
 ENV PATH="/opt/venv/bin:$PATH"
 
 
-RUN chmod +x /home/*
+# RUN chmod +x /home/*
 ENV SHELL=/bin/bash
 # CMD ["/bin/bash"]
 CMD ["jupyter", "lab", "--ip=0.0.0.0", "--port=8888", "--no-browser", "--allow-root", "--ServerApp.allow_origin='*'", "--ServerApp.token=''"]
