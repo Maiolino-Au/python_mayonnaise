@@ -1,5 +1,7 @@
 FROM gcfntnu/scanpy
 
+ENV PATH=/opt/conda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+
 # ENV DEBIAN_FRONTEND=noninteractive
 # RUN apt-get -y update && apt-get -y upgrade && apt-get -y install r-base
 # RUN apt-get -y install gdebi-core wget
