@@ -28,7 +28,7 @@ FROM gcfntnu/scanpy
 # # Set the virtual environment as the default Python path
 # ENV PATH="/opt/venv/bin:$PATH"
 
-RUN pip3 install scvi
+RUN pip install scvi
 
 # RUN chmod +x /home/*
 ENV SHELL=/bin/bash
