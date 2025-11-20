@@ -4,7 +4,6 @@ ENV PATH=/opt/conda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:
 
 RUN pip install scvi
 
-RUN sudo apt update && sudo apt install -y python3 python3-pip python3-venv
 # create a virtual environment in which JupyterLab can be installed
 RUN python3 -m venv /opt/venv
 # Activate virtual environment and install JupyterLab
